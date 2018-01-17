@@ -11,6 +11,13 @@ export default class Category {
 
   handleCategoryClick(event, target) {
     event.preventDefault();
+    if(!this.selected) {
+      this.selected = target;
+    } else{
+      this.selected.classList.remove('selected');
+      this.selected = target;
+    }
+    target.classList.add('selected');
     this.onClick(target.textContent);
   }
 

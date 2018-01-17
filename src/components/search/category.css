@@ -1,3 +1,9 @@
+.selected {
+  font-weight: 500;
+  color: rgb(49, 32, 143);
+  text-decoration: underline;
+}
+
 #hamburger-icon {
   width: 40px;
   position: absolute;
